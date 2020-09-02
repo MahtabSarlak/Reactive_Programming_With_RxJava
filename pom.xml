@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+    <properties>
+        <rxjava.version>2.1.9</rxjava.version>
+        <rxjava_math.version>1.0.0</rxjava_math.version>
+    </properties>
+
+    <groupId>ir.tourismit.tit</groupId>
+    <artifactId>RxJava</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+    <name>RxJava</name>
+
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/io.reactivex.rxjava2/rxjava -->
+        <dependency>
+            <groupId>io.reactivex.rxjava2</groupId>
+            <artifactId>rxjava</artifactId>
+            <version>${rxjava.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.github.akarnokd</groupId>
+            <artifactId>rxjava2-extensions</artifactId>
+            <version>0.20.8</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.github.kongpf8848/rxjava2-math -->
+        <dependency>
+            <groupId>com.github.kongpf8848</groupId>
+            <artifactId>rxjava2-math</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
+    </dependencies>
+</project>
